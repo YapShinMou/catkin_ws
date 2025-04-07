@@ -1,0 +1,11 @@
+<launch>
+	
+	<include file="$(find test_pkg)/launch/turtlebot3_house.launch">
+	</include>
+	
+	<include file="$(find test_pkg)/launch/turtlebot3_navigation.launch">
+	</include>
+	
+	<!-- <node name="final" pkg="test_pkg" type="final" output="screen"/> -->
+	
+</launch>

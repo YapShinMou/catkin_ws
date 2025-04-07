@@ -1,0 +1,3 @@
+<launch>
+	<node name="hello_node_node" pkg="test_pkg" type="hello_eexx" output="screen" />
+</launch>
