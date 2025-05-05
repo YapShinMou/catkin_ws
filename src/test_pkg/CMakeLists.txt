@@ -213,7 +213,8 @@ include_directories(
 
 ##build src/hello_world.cpp
 
-catkin_install_python(PROGRAMS
+catkin_install_python(
+	PROGRAMS
 	scripts/hello.py ##heollo.py is .py file name
 	DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
