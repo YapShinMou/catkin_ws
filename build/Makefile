@@ -636,6 +636,19 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named hello_param
+
+# Build rule for target.
+hello_param: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hello_param
+.PHONY : hello_param
+
+# fast build rule for target.
+hello_param/fast:
+	$(MAKE) -f test_pkg/CMakeFiles/hello_param.dir/build.make test_pkg/CMakeFiles/hello_param.dir/build
+.PHONY : hello_param/fast
+
+#=============================================================================
 # Target rules for targets named tf_generate_messages_cpp
 
 # Build rule for target.
@@ -1308,6 +1321,7 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... hello_param"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... test_pkg_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"

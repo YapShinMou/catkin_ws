@@ -558,6 +558,21 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+test_pkg/CMakeFiles/hello_param.dir/rule:
+	cd /home/yap/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/hello_param.dir/rule
+.PHONY : test_pkg/CMakeFiles/hello_param.dir/rule
+
+# Convenience name for target.
+hello_param: test_pkg/CMakeFiles/hello_param.dir/rule
+
+.PHONY : hello_param
+
+# fast build rule for target.
+hello_param/fast:
+	cd /home/yap/catkin_ws/build && $(MAKE) -f test_pkg/CMakeFiles/hello_param.dir/build.make test_pkg/CMakeFiles/hello_param.dir/build
+.PHONY : hello_param/fast
+
+# Convenience name for target.
 test_pkg/CMakeFiles/tf_generate_messages_cpp.dir/rule:
 	cd /home/yap/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/tf_generate_messages_cpp.dir/rule
 .PHONY : test_pkg/CMakeFiles/tf_generate_messages_cpp.dir/rule
@@ -1385,6 +1400,33 @@ src/hello_name.cpp.s:
 	cd /home/yap/catkin_ws/build && $(MAKE) -f test_pkg/CMakeFiles/hello_eexx.dir/build.make test_pkg/CMakeFiles/hello_eexx.dir/src/hello_name.cpp.s
 .PHONY : src/hello_name.cpp.s
 
+src/hello_param.o: src/hello_param.cpp.o
+
+.PHONY : src/hello_param.o
+
+# target to build an object file
+src/hello_param.cpp.o:
+	cd /home/yap/catkin_ws/build && $(MAKE) -f test_pkg/CMakeFiles/hello_param.dir/build.make test_pkg/CMakeFiles/hello_param.dir/src/hello_param.cpp.o
+.PHONY : src/hello_param.cpp.o
+
+src/hello_param.i: src/hello_param.cpp.i
+
+.PHONY : src/hello_param.i
+
+# target to preprocess a source file
+src/hello_param.cpp.i:
+	cd /home/yap/catkin_ws/build && $(MAKE) -f test_pkg/CMakeFiles/hello_param.dir/build.make test_pkg/CMakeFiles/hello_param.dir/src/hello_param.cpp.i
+.PHONY : src/hello_param.cpp.i
+
+src/hello_param.s: src/hello_param.cpp.s
+
+.PHONY : src/hello_param.s
+
+# target to generate assembly for a file
+src/hello_param.cpp.s:
+	cd /home/yap/catkin_ws/build && $(MAKE) -f test_pkg/CMakeFiles/hello_param.dir/build.make test_pkg/CMakeFiles/hello_param.dir/src/hello_param.cpp.s
+.PHONY : src/hello_param.cpp.s
+
 src/hello_world.o: src/hello_world.cpp.o
 
 .PHONY : src/hello_world.o
@@ -1746,6 +1788,7 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... hello_param"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... test_pkg_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
@@ -1808,6 +1851,9 @@ help:
 	@echo "... src/hello_name.o"
 	@echo "... src/hello_name.i"
 	@echo "... src/hello_name.s"
+	@echo "... src/hello_param.o"
+	@echo "... src/hello_param.i"
+	@echo "... src/hello_param.s"
 	@echo "... src/hello_world.o"
 	@echo "... src/hello_world.i"
 	@echo "... src/hello_world.s"

@@ -1,3 +1,13 @@
+<!-- 隨便試試 -->
 <launch>
+	<param name="/print_per" value="1.5" />
+	<rosparam file="$(find test_pkg)/param/test_param.yaml" command="load"/>
+	
+	<!-- 名稱測試，type=executable file -->
 	<node name="hello_node_node" pkg="test_pkg" type="hello_eexx" output="screen" />
+	
+	<!-- parameter測試 -->
+	<node name="hello_param_cpp" pkg="test_pkg" type="hello_param" output="screen" />
+	
 </launch>
+

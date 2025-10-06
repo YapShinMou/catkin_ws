@@ -96,3 +96,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/test_pkg" TYPE PROGRAM FILES "/home/yap/catkin_ws/build/test_pkg/catkin_generated/installspace/hello.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/test_pkg" TYPE PROGRAM FILES "/home/yap/catkin_ws/build/test_pkg/catkin_generated/installspace/hello_param.py")
+endif()
+

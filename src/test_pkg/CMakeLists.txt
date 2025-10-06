@@ -216,9 +216,9 @@ include_directories(
 catkin_install_python(
 	PROGRAMS
 	scripts/hello.py ##heollo.py is .py file name
+	scripts/hello_param.py
 	DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
-
 
 
 ##hello_eexx is executable file, hello_name.cpp is .cpp file name
@@ -269,4 +269,7 @@ target_link_libraries(multi_goal_navigation ${catkin_LIBRARIES})
 
 add_executable(final src/final.cpp)
 target_link_libraries(final ${catkin_LIBRARIES})
+
+add_executable(hello_param src/hello_param.cpp)
+target_link_libraries(hello_param ${catkin_LIBRARIES})
 
